@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Fomularios</title>
+  </head>
+  <body>
+    <h1>Fomularios</h1>
+    <!--Action se refiere a la accion que se realizara-->
+    <!-- Method hace referencia al metodo HTTP usado para enviar los datos-->
+    <!--El metodo GET esta por defecto-->
+    <form action="" method="GET">
+      <label for="name">Nombre</label>
+      <input type="text" name="name" id="name" />
+      <br/>
+
+      <label for="email">Correo electronico</label>
+      <input type="email" name="email" id="email" />
+
+        <br/>
+      <label for="password">Contraseña</label>
+      <input type="password" name="password" id="password" />
+
+      <br/>
+      <label for="publicacion">Publicacion</label>
+      <textarea name="publicacion" id="publicacion" cols="30" rows="10"></textarea>
+
+      <br/>
+      <label for="color">Color favorito</label>
+      <select name="color" id="color">
+          <option value="azul">Azul</option>
+          <option value="rojo">Rojo</option>
+          <option value="verde">Verde</option>
+      </select>
+
+      <br/>
+      <label for="">Selecciona tu rango de edad</label>
+      <label for="op1">De 18 a 22</label>
+      <input type="radio" id="op1" name="edad" >
+      <label for="op2">De 23 a 28</label>
+      <input type="radio" id="op2" name="edad" >
+      <label for="op3">De 29 a 59</label>
+      <input type="radio" id="op3" name="edad" >
+
+      <br/>
+      <!-- <input type="submit" value="Enviar"> MANERA ANTIGUA-->
+      <button type="submit">Guardar datos</button> <!--MANERA NUEVA, aqui
+    se pueden cargar iconos-->
+
+    </form>
+  </body>
+</html>
